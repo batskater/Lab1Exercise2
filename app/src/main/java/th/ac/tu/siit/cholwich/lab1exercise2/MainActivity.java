@@ -31,14 +31,11 @@ public class MainActivity extends Activity {
 
             if(selTo == R.id.rbToF){
                 temp = temp*(9.0/5.0)+32;
-                tv.setText(Double.toString(temp));
             }
             else if(selTo == R.id.rbToK){
                 temp = temp+273.15;
-                tv.setText(Double.toString(temp));
             }
-            else
-            tv.setText(Double.toString(temp));
+
         }
 
         else if(selFrom == R.id.rbFrmF) {
@@ -50,8 +47,6 @@ public class MainActivity extends Activity {
                 temp = (temp+459.67)*5.0/9.0;
                 tv.setText(Double.toString(temp));
             }
-            else
-                tv.setText(Double.toString(temp));
         }
         else if(selFrom == R.id.rbFrmK) {
             if(selTo == R.id.rbToC){
@@ -60,11 +55,10 @@ public class MainActivity extends Activity {
             }
             else if(selTo == R.id.rbToF){
                 temp = (temp*(9.0/5.0))-459.67;
-                tv.setText(Double.toString(temp));
             }
-            else
-                tv.setText(Double.toString(temp));
+
         }
+        tv.setText(Double.toString(temp));
 
     }
 
