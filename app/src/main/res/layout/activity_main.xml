@@ -96,7 +96,9 @@
         android:text="@string/convert"
         android:id="@+id/btnConvert"
         android:layout_below="@+id/rgTo"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:nestedScrollingEnabled="true"
+        android:onClick="convert" />
 
     <TextView
         android:layout_width="match_parent"
